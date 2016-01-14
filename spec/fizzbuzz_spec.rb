@@ -16,4 +16,7 @@ describe "fizzbuzz" do
   it 'returns "Fizzbuzz" if a number is both multiple of 3 and 5' do 
     expect(fizzbuzz(15)).to eq "fizzbuzz"
   end
+  it "returns '(argument) is not a valid number if not passed an Integer" do
+    expect(fizzbuzz("a")).to eq "a is not a valid number"
+  end
 end
